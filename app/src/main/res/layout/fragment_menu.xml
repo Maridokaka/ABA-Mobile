@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".ui.menu.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ln_account"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_person_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Accounts"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnTransfer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_transfer_within_a_station_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Transfers"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnPayment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_attach_money_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Payments"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnDeposit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_library_books_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Deposit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnCashATM"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_local_atm_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Cash ATM"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnVirtualCard"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_credit_card_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Virtual Card"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnScanQR"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_select_all_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Scan QR"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnLoan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_monetization_on_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Loans"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnLocation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_location_on_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="ABA Locator"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/lnQuickTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/colorCircle"
+            android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Quick Transfer"
+               android:textSize="22sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:layout_marginStart="20sp"
+               android:layout_marginTop="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save here ABA accounts of your relatives,friends or business partner, to whom you transfer funds frequently."
+                android:textColor="@android:color/white"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="50dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:tint="@android:color/white"
+                android:src="@drawable/swap"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lnQuickPayment"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick Payment"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save your favorite service providers to make payment
+                                process easy and fast each time."
+                android:textColor="@android:color/white"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="50dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_monetization_on_black_24dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>

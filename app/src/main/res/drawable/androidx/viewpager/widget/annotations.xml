@@ -1,0 +1,5 @@
+<root>
+    <item name='androidx.viewpager.widget.ViewPager'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

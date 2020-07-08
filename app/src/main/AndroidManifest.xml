@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.marido.abamonile">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.payplace.DragonActivity"
+            android:label="@string/title_activity_dragon"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".QuickPaymentActivity"
+            android:label="Quick Payment"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QuickTransferActivity"
+            android:label="Quick Transfer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="ABA Bank"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginAcountActivity"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".VirtualCardActivity"
+            android:label="Virtual Card"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CashtoATMActivity"
+            android:label="Cash To ATM"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.DepositActivity"
+            android:label="Deposit"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TransfersActivity"
+            android:label="Transfers"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AccountActivity"
+            android:label="Account"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

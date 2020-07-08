@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Enter Currency in dollars"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ed_dollar_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="0dp"
+        android:hint="Enter dollars"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_below="@+id/ed_dollar_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="CONVERT"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_khmer_money"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Khmer is : 1000 riels"
+        android:textSize="20sp"/>
+</RelativeLayout>
